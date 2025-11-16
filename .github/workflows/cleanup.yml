@@ -1,0 +1,44 @@
+name: Cleanup Previews
+
+on:
+  schedule:
+    - cron: "0 * * * *" # jede Stunde
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Fetch branch list
+        id: branches
+        run: |
+          git fetch origin
+          git branch -r | sed 's/origin\///' > branches.txt
+          cat branches.txt
+
+      - name: Cleanup directories
+        run: |
+          for dir in */; do
+            CLEAN_DIR=${dir%/}
+            if ! grep -Fxq "$CLEAN_DIR" branches.txt; then
+              echo "Removing stale preview: $CLEAN_DIR"
+              rm -rf "$CLEAN_DIR"
+            fi
+          done
+
+      - name: Commit and Push Cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git commit -m "cleanup: remove stale preview dirs"; then
+            git push origin gh-pages
+          else
+            echo "No changes to commit."
+          fi
