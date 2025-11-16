@@ -2,7 +2,7 @@ name: Deploy Astro to All-Inkl
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build-and-deploy:
