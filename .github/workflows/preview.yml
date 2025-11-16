@@ -11,10 +11,6 @@ jobs:
   preview:
     runs-on: ubuntu-latest
 
-    env:
-      # Slashes sind problematisch für URLs → ersetzen
-      CLEAN_BRANCH: ${{ github.ref_name.replace('/', '-') }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,10 +26,16 @@ jobs:
       - name: Build Astro
         run: npm run build
 
+      - name: Prepare clean branch name
+        id: clean
+        run: |
+          CLEAN="${GITHUB_REF_NAME//\//-}"
+          echo "clean_branch=$CLEAN" >> $GITHUB_OUTPUT
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./dist
-          destination_dir: ${{ env.CLEAN_BRANCH }}
+          destination_dir: ${{ steps.clean.outputs.clean_branch }}

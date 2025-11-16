@@ -8,14 +8,17 @@ jobs:
   comment:
     runs-on: ubuntu-latest
 
-    env:
-      CLEAN_BRANCH: ${{ github.head_ref.replace('/', '-') }}
-
     steps:
+      - name: Prepare clean branch name
+        id: clean
+        run: |
+          CLEAN="${GITHUB_HEAD_REF//\//-}"
+          echo "clean_branch=$CLEAN" >> $GITHUB_OUTPUT
+
       - name: Create PR Comment
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
             🔍 **Preview is live!**
 
-            👉 https://othaldo.github.io/stevenschwarz/${{ env.CLEAN_BRANCH }}/
+            👉 https://othaldo.github.io/stevenschwarz/${{ steps.clean.outputs.clean_branch }}/
