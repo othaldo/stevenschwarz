@@ -19,17 +19,16 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install deps
+      - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: Build Astro
         run: npm run build
 
-      - name: Push to preview repo
+      - name: Deploy preview to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          external_repository: othaldo/stevenschwarz-preview
           publish_branch: gh-pages
-          publish_dir: dist
+          publish_dir: ./dist
           destination_dir: ${{ github.ref_name }}
