@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap');
 
 :root {
-  --bg: #0b1020;
-  --bg-alt: #10172b;
-  --fg: #eaf1ff;
-  --muted: #b8c2df;
-  --accent: #8f7afe;
-  --accent-2: #4fd1c5;
+  --bg: #0b0f16;
+  --bg-alt: #111726;
+  --fg: #e8f1ff;
+  --muted: #b5c2dd;
+  --accent: #55d6ff;
+  --accent-2: #ff914d;
   --card: rgba(255, 255, 255, 0.04);
   --border: rgba(255, 255, 255, 0.1);
   --shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
@@ -22,9 +22,9 @@
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at 10% 20%, rgba(143, 122, 254, 0.08), transparent 30%),
-              radial-gradient(circle at 90% 10%, rgba(79, 209, 197, 0.08), transparent 25%),
-              linear-gradient(135deg, #0a0d1a 0%, #0f162a 100%);
+  background: radial-gradient(circle at 10% 20%, rgba(85, 214, 255, 0.1), transparent 32%),
+              radial-gradient(circle at 90% 10%, rgba(255, 145, 77, 0.14), transparent 26%),
+              linear-gradient(135deg, #0a0d1a 0%, #0f1524 100%);
   color: var(--fg);
   min-height: 100vh;
   line-height: 1.7;
@@ -54,15 +54,15 @@ body {
 }
 
 .bg-glow.one {
-  background: radial-gradient(circle at 15% 20%, rgba(143, 122, 254, 0.32), transparent 45%);
+  background: radial-gradient(circle at 15% 20%, rgba(85, 214, 255, 0.32), transparent 45%);
 }
 
 .bg-glow.two {
-  background: radial-gradient(circle at 85% 15%, rgba(79, 209, 197, 0.3), transparent 40%);
+  background: radial-gradient(circle at 85% 15%, rgba(255, 145, 77, 0.28), transparent 40%);
 }
 
 .bg-glow.three {
-  background: radial-gradient(circle at 50% 80%, rgba(255, 168, 88, 0.16), transparent 45%);
+  background: radial-gradient(circle at 50% 80%, rgba(85, 214, 255, 0.12), transparent 45%);
 }
 
 .site-header {
@@ -94,12 +94,17 @@ body {
   color: var(--fg);
 }
 
-.brand-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  box-shadow: 0 0 0 6px rgba(143, 122, 254, 0.16);
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  box-shadow: 0 0 0 8px rgba(85, 214, 255, 0.08);
+  background: radial-gradient(circle at 30% 20%, rgba(255, 145, 77, 0.35), transparent 40%),
+              radial-gradient(circle at 80% 70%, rgba(85, 214, 255, 0.18), transparent 45%);
+}
+
+.brand-wordmark {
+  font-size: 1.05rem;
 }
 
 nav a {
