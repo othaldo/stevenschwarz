@@ -3,6 +3,35 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Über mich – stevenschwarz.de">
-  <h1>Über mich</h1>
-  <p>Hier kannst du später etwas über dich eintragen.</p>
+  <section class="page-header">
+    <p class="eyebrow">Über mich</p>
+    <h1>Hi, ich bin Steven – C++-Engineer mit kreativen Seiten.</h1>
+    <p class="lead">Ich baue robuste Backend-Systeme, pragmatische Tools und probiere gern neue Ideen aus.</p>
+  </section>
+
+  <section class="panel about-card">
+    <div>
+      <h2>Was mich antreibt</h2>
+      <p>Technische Eleganz ohne unnötige Komplexität. Klare Sprache, saubere Architekturen und Systeme, die verlässlich laufen.</p>
+    </div>
+    <ul class="list">
+      <li><span class="dot"></span> C++-Backends mit AMQP, libuv und RabbitMQ</li>
+      <li><span class="dot"></span> PostgreSQL: Queries, Optimierung, Analyse</li>
+      <li><span class="dot"></span> Pragmatische Frontends in JS/TS und LESS</li>
+      <li><span class="dot"></span> Saubere CI/CD-Setups und Auto-Deploy</li>
+    </ul>
+  </section>
+
+  <section class="panel about-card">
+    <div>
+      <h2>Interessen & Motivation</h2>
+      <p>Ich mag Projekte, die realen Nutzen bringen, schnell starten und sich iterativ verbessern. Technik ist Werkzeug – Kreativität ist Treibstoff.</p>
+    </div>
+    <ul class="list">
+      <li><span class="dot"></span> KI, Prompting, experimentelle Ideen</li>
+      <li><span class="dot"></span> Web-Tools, Automation, Astro, CI/CD</li>
+      <li><span class="dot"></span> LitRPG, Storytelling, Weltenbau</li>
+      <li><span class="dot"></span> Lernen, ausprobieren, verbessern</li>
+    </ul>
+  </section>
 </BaseLayout>
