@@ -3,6 +3,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Über mich – stevenschwarz.de">
-  <h1>Über mich</h1>
-  <p>Hier kannst du später etwas über dich eintragen.</p>
+  <section class="page-header">
+    <p class="eyebrow">Über mich</p>
+    <h1>Hi, ich bin Steven – neugierig, pragmatisch und immer am Basteln.</h1>
+    <p class="lead">Ich mag Projekte, die schnell Wert liefern: klein starten, Feedback holen und kontinuierlich schärfen.</p>
+  </section>
+
+  <section class="panel about-card">
+    <div>
+      <h2>Was mich antreibt</h2>
+      <p>Saubere Oberflächen, klare Sprache und nützliche Funktionen. Ich mag es, Ideen greifbar zu machen, statt lange zu planen.</p>
+    </div>
+    <ul class="list">
+      <li><span class="dot"></span> Frontend mit Astro, React und TypeScript</li>
+      <li><span class="dot"></span> Kleine Tools, die direkt helfen</li>
+      <li><span class="dot"></span> Fokus auf Zugänglichkeit & Performance</li>
+    </ul>
+  </section>
 </BaseLayout>
