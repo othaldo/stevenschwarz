@@ -5,19 +5,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout title="Projekte – stevenschwarz.de">
   <section class="page-header">
     <p class="eyebrow">Projekte</p>
-    <h1>Ausprobieren, bauen, veröffentlichen</h1>
-    <p class="lead">Eine Auswahl kleiner Apps und Experimente, die konkrete Alltagsprobleme adressieren.</p>
+    <h1>C++ im Job, Web-Tools nach Feierabend</h1>
+    <p class="lead">Schnörkellose Backends beruflich, einfache Apps privat – immer mit Blick auf Klarheit und Nutzen.</p>
   </section>
 
   <section class="project-grid">
     <article class="project-card">
       <header>
         <h2>Luftcheck</h2>
-        <p>Bestimmt die optimale Lüftungszeit anhand der relativen Luftfeuchtigkeit drinnen und draußen.</p>
+        <p>Das Fenster war zu oft gekippt. Luftcheck vergleicht Innen- und Außenfeuchte und sagt: jetzt lüften oder nicht.</p>
         <div class="tag-row">
-          <span class="tag">Tool</span>
+          <span class="tag">JavaScript</span>
           <span class="tag">Single Page</span>
-          <span class="tag">Feuchtigkeit</span>
+          <span class="tag">Ein-Problem-Ein-Tool</span>
         </div>
       </header>
       <div class="frame-wrapper">
@@ -28,15 +28,45 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <article class="project-card">
       <header>
         <h2>Techback</h2>
-        <p>React-App für tägliche Rückenübungen mit Kategorien, Fortschrittstracking und Onboarding.</p>
+        <p>Ein geführter Flow für Rückentraining, damit die Routine nicht einschläft. Wenig UI, klare Reihenfolge.</p>
         <div class="tag-row">
           <span class="tag">React</span>
-          <span class="tag">Fitness</span>
-          <span class="tag">Guided</span>
+          <span class="tag">Guided Flow</span>
+          <span class="tag">JS/TS</span>
         </div>
       </header>
       <div class="frame-wrapper">
         <iframe src="https://othaldo.github.io/techback/" loading="lazy" class="app-frame"></iframe>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <header>
+        <h2>CI/CD & Deployment</h2>
+        <p>Astro-Builds laufen über GitHub Actions, deployen automatisch und reproduzierbar – ohne versteckte Magie.</p>
+        <div class="tag-row">
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Astro</span>
+          <span class="tag">Automation</span>
+        </div>
+      </header>
+      <div class="frame-wrapper">
+        <p class="placeholder">Saubere Logs, reproduzierbare Deployments – bereit für neue Experimente.</p>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <header>
+        <h2>C++ Backend Work</h2>
+        <p>Mein berufliches Zuhause: C++-Services mit Messaging und PostgreSQL. Performance und Verlässlichkeit vor Buzzwords.</p>
+        <div class="tag-row">
+          <span class="tag">C++</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">RabbitMQ</span>
+        </div>
+      </header>
+      <div class="frame-wrapper">
+        <p class="placeholder">Funktionen, die halten, was sie versprechen: stabile Architektur, Daten-Optimierungen, saubere Refactorings.</p>
       </div>
     </article>
   </section>

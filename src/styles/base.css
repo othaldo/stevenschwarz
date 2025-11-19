@@ -369,6 +369,15 @@ p {
   border: none;
 }
 
+.placeholder {
+  padding: 1.25rem 1.5rem;
+  color: var(--muted);
+  line-height: 1.6;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.05));
+  border-top: 1px solid var(--border);
+  font-weight: 600;
+}
+
 .about-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

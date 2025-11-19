@@ -5,42 +5,91 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout title="stevenschwarz.de">
   <section class="hero panel">
     <div class="hero-copy">
-      <p class="eyebrow">Tools & kleine Apps</p>
-      <h1>Hallo, ich bin <span>Steven</span>. Ich baue digitale Helfer, die Dinge einfacher machen.</h1>
-      <p class="lead">Schnelle Prototypen, nützliche Alltags-Tools und kleine Produkte, die mit viel Liebe zum Detail entstehen.</p>
+      <p class="eyebrow">C++ Backend · neugieriger Bastler</p>
+      <h1>Ich bin <span>Steven</span>. Im Job schreibe ich robuste Backends, nach Feierabend entstehen Tools und KI-Spielereien.</h1>
+      <p class="lead">Ruhig, klar, wenig Drama: C++, Datenbanken, saubere Architekturen. Privat: kleine Apps, Automationen und Ideen, die man einfach ausprobieren muss.</p>
       <div class="cta-row">
         <a class="button primary" href="/projects">Projekte ansehen</a>
         <a class="button ghost" href="mailto:hi@stevenschwarz.de">Kontakt aufnehmen</a>
       </div>
       <div class="chips">
-        <span class="chip">JavaScript & TypeScript</span>
-        <span class="chip">Astro & React</span>
-        <span class="chip">UI mit Fokus auf Klarheit</span>
+        <span class="chip">C++ · Messaging · Architektur</span>
+        <span class="chip">PostgreSQL · Datenmodelle</span>
+        <span class="chip">JS/TS · Astro</span>
+        <span class="chip">CI/CD · reproduzierbare Deploys</span>
+        <span class="chip">KI · Geschichten · Neugier</span>
       </div>
     </div>
   </section>
 
   <section class="section-title">
-    <p class="eyebrow">Fokus</p>
-    <h2>Was meine Projekte ausmacht</h2>
-    <p>Klare Oberflächen, schnelle Ladezeiten und pragmatische Funktionen – damit aus Ideen nützliche Produkte werden.</p>
+    <p class="eyebrow">Beruflich</p>
+    <h2>Was mich ausmacht</h2>
+    <p>Ich baue C++-Backends, die ruhig laufen. Klare Architekturen, gute Datenmodelle und Code, den man erklären kann.</p>
   </section>
 
   <section class="feature-grid">
     <article class="feature-card">
-      <h3>Schnell startklar</h3>
-      <p>Leichte Deployments und geringer Overhead: Damit Tools sofort nutzbar sind.</p>
-      <small>Builds mit Astro, React und modernen Bundlern.</small>
+      <h3>C++ Backend-Entwicklung</h3>
+      <p>Robuste Services, Messaging, Event-Loops – verlässlich statt verspielt.</p>
+      <small>Performance messen, Engpässe beheben, Systeme beruhigen.</small>
     </article>
     <article class="feature-card">
-      <h3>UX mit Details</h3>
-      <p>Reduzierte Oberflächen, sinnvolle Defaults und Micro-Interactions für mehr Klarheit.</p>
-      <small>Farben, Kontrast und Typo abgestimmt auf Fokus.</small>
+      <h3>Daten & Performance</h3>
+      <p>PostgreSQL-Queries, saubere Datenpfade, Modelle ohne Ballast.</p>
+      <small>Analyse, Optimierung, klare Schnittstellen.</small>
     </article>
     <article class="feature-card">
-      <h3>Iterativ denken</h3>
-      <p>Kleine Releases, schnelle Feedback-Schleifen und stetige Verbesserungen.</p>
-      <small>Von Idee zu nutzbarem Ergebnis in kurzen Zyklen.</small>
+      <h3>Fullstack mit Augenmaß</h3>
+      <p>Frontends in JS/TS und Astro, minimal gehalten, gut wartbar.</p>
+      <small>Nur so viel UI, wie nötig ist, damit alles verständlich bleibt.</small>
     </article>
+    <article class="feature-card">
+      <h3>Builds & Automation</h3>
+      <p>CI/CD, Auto-Deploy, klare Pipelines ohne Zaubertricks.</p>
+      <small>Reproduzierbare Builds und Logs, die man wirklich lesen kann.</small>
+    </article>
+  </section>
+
+  <section class="section-title">
+    <p class="eyebrow">Neben dem Job</p>
+    <h2>Was ich baue und ausprobiere</h2>
+    <p>Kleine Apps, KI-Experimente und Webtools, die aus einer Idee heraus entstehen und einfach funktionieren sollen.</p>
+  </section>
+
+  <section class="feature-grid">
+    <article class="feature-card">
+      <h3>Kleine Tools</h3>
+      <p>Ein-Problem-Ein-Tool, wenn etwas nervt. Luftcheck entstand genau so.</p>
+      <small>Alltagsproblem, kleine Lösung, fertig.</small>
+    </article>
+    <article class="feature-card">
+      <h3>Apps & Experimente</h3>
+      <p>React- und Astro-Ideen wie Techback, die mit wenig UI auskommen.</p>
+      <small>Geführte Abläufe, damit man dranbleibt.</small>
+    </article>
+    <article class="feature-card">
+      <h3>Automation & Deployment</h3>
+      <p>GitHub Actions, Auto-Builds, kein Deployment-Theater.</p>
+      <small>Transparente Schritte, reproduzierbar und ruhig.</small>
+    </article>
+    <article class="feature-card">
+      <h3>KI & Storytelling</h3>
+      <p>Prompting, kleine KI-Spielereien, LitRPG-Gedanken – Technik trifft Geschichten.</p>
+      <small>Kreative Neugier als Ausgleich zum Tagesgeschäft.</small>
+    </article>
+  </section>
+
+  <section class="panel about-card">
+    <div>
+      <h2>Mein Ansatz</h2>
+      <p>Pragmatisch. Klar. Funktional. Dinge, die man versteht – und die zuverlässig laufen.</p>
+    </div>
+    <ul class="list">
+      <li><span class="dot"></span> Kleine Releases, schnelle Feedback-Schleifen</li>
+      <li><span class="dot"></span> Lesbarkeit, Stabilität, saubere Schnittstellen</li>
+      <li><span class="dot"></span> Technik als Werkzeug für echten Nutzen</li>
+      <li><span class="dot"></span> Raum für Kreativität – in Code und Geschichten</li>
+    </ul>
   </section>
 </BaseLayout>
