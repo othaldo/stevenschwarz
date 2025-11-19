@@ -7,6 +7,8 @@ const { title = "stevenschwarz.de" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#0B0F16" />
     <title>{title}</title>
   </head>
   <body>
@@ -18,8 +20,8 @@ const { title = "stevenschwarz.de" } = Astro.props;
       <header class="site-header">
         <div class="navbar">
           <a class="brand" href="/">
-            <span class="brand-dot"></span>
-            <span>stevenschwarz.de</span>
+            <img src="/logo-ss.svg" alt="Logo von Steven Schwarz" class="brand-mark" />
+            <span class="brand-wordmark">stevenschwarz.de</span>
           </a>
           <nav>
             <a href="/">Home</a>
